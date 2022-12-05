@@ -1,0 +1,150 @@
+.header-nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-102%);
+  transition: transform .3s;
+  width: 80%;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 101;
+  overflow-y: auto;
+
+  &__active {
+    transform: translateX(0);  
+  }
+}
+
+.nav-top {
+  background-color: var(--dark-c);
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid #575757;
+  }
+
+  &-login {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+
+    .nav-line {
+      height: 18px;
+      width: 1px;
+      display: inline-block;
+      background-color: #fff;
+      margin: 0 15px;
+    }
+  }
+
+  .nav-user {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+
+  &-btn-login, &-btn-register{
+    color: var(--white-c);
+    font-size: 14px;
+  }
+
+  .icon-close {
+    color: var(--white-c);
+    font-size: 20px;
+  }
+}
+
+.header-nav-list {
+  padding: 16px 0px;
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    color: var(--dark-c);
+
+    &__catalog{ 
+      .nav-link__icon {
+        background-color: var(--yellow-c);
+        border-radius: 6px;
+      }
+      .nav-link__text {
+        font-weight: 500;
+      }
+    }
+
+    &__accordion {
+      justify-content: space-between;
+    }
+
+    .icon-transition {
+      transition: 0.2s;
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      font-size: 20px;
+    } 
+
+    &__text {
+      font-size: 14px;
+      color: var(--dark-c);
+    }
+  }
+
+  .nav-line-top {
+    border-top: 1px solid #ececec;
+    margin-bottom: 16px;
+  }
+
+  .nav-language-link {
+    display: inline-block;
+    padding: 2px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 14px;
+    border-radius: 6px;
+    color: #333;
+    &__active {
+      background-color: #333;
+      color: #fff;
+    }
+  }
+
+  .nav-accordion-content {
+    padding-left: 64px;
+    transition: all 0.3s ease;
+
+    li:first-child {
+      margin-top: 16px;
+    }
+
+    li {
+      margin-bottom: 16px;
+    }
+
+    .link-accordion {
+      font-size: 13px;
+      color: var(--dark-c);
+    }
+  }
+}
