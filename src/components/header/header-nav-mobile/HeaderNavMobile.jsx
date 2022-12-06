@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './HeaderNavMobile.scss'
+import './HeaderNavMobile.scss';
 
 // icons 
-import { BsGrid, BsClockHistory, BsBoxSeam, BsQuestionDiamond, BsChevronDown, BsTelephone } from 'react-icons/bs'
-import { GrMapLocation } from 'react-icons/gr'
-import { TbExchange } from 'react-icons/tb'
-import { BiWorld } from 'react-icons/bi'
-import { IoClose } from 'react-icons/io5'
-import { FiUser } from 'react-icons/fi'
+import { BsGrid, BsClockHistory, BsBoxSeam, BsQuestionDiamond, BsChevronDown, BsTelephone } from 'react-icons/bs';
+import { GrMapLocation } from 'react-icons/gr';
+import { TbExchange } from 'react-icons/tb';
+import { BiWorld } from 'react-icons/bi';
+import { IoClose } from 'react-icons/io5';
+import { FiUser } from 'react-icons/fi';
 
 //logo 
 import logoWhite from '../../../assets/images/texnomart-logo-white.svg'

@@ -24,12 +24,9 @@ const HeaderCenter = () => {
 
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
   const [isSearchCatalogActive, setIsSearchCatalogActive] = useState(false);
-  const [activeSearchCatalog, setActiveSearchCatalog] =
-    useState("Barcha mahsulotlar");
+  const [activeSearchCatalog, setActiveSearchCatalog] = useState("Barcha mahsulotlar");
   const [serachIsValid, setSearchIsValid] = useState(false);
-  useEffect(() => {
-    console.log(elSearchInput.current.value);
-  }, [serachIsValid]);
+
   return (
     <div className="header-center">
       <button

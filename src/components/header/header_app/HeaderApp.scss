@@ -1,0 +1,50 @@
+.header-app {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ececec;
+  box-shadow: 0 6px 8px -6px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
+
+  .header-app__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close-icon {
+    font-size: 22px;
+    color: var(--gray-c);
+  }
+
+  .gold-logo {
+    width: 48px;
+    height: 48px;
+    margin: 0px 12px 0px 10px;
+  }
+
+  &__text {
+    color: var(--gray-c);
+    font-size: 12px;
+  }
+
+  .app-link {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: var(--dark-c);
+    padding: 7px 12px;
+    display: block;
+    background: var(--yellow-c);
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-app {
+    display: flex;
+  }
+}
