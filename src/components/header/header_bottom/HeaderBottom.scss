@@ -1,0 +1,99 @@
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 10px;
+
+  .header-catalog-btn {
+    padding: 10px 16px;
+    background: #fbc100;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+    span {
+      height: 24px;
+    }
+
+    .catalog__icon {
+      font-size: 24px;
+    }
+
+    .catalog__text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: .3px;
+      color: var(--dark-c);
+      margin-left: 12px;
+    }
+  }
+
+  .header-bottom-list {
+    display: flex;
+    width: calc(100% - 130px);
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      position: relative;
+      margin: 0 4px;
+      text-align: center;
+    }
+
+    li:first-child {
+      background-color: var(--black-c);
+      border-radius: 8px;
+      padding: 4px 10px 4px 30px;
+      margin: 0 20px 0 0;
+
+      a {
+        color: var(--yellow-c);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../../assets/images/storm-icon.svg");
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        left: 6px;
+      }
+    }
+
+    li:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../../assets/images/fire-icon.svg");
+      width: 20px;
+      height: 20px;
+      top: -1px;
+      left: -22px;
+    }
+
+    .header-bottom__link {
+      text-transform: uppercase;
+      position: relative;
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: var(--dark-c);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  .header-bottom .header-catalog-btn {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-bottom {
+    display: none;
+  }
+}
