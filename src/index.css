@@ -58,6 +58,7 @@
   --dark-c: #333;
   --white-c: #FFF;
   --yellow-c: #fbc100;
+  --dark-white-c: #f7f7f7;
 }
 
 body, html {
@@ -91,6 +92,31 @@ a {
   max-width: 1488px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+.scroll-dropdown::-webkit-scrollbar-thumb {
+  background: #e8e8e8;
+  border-radius: 5px;
+}
+
+.scroll-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1024px) {

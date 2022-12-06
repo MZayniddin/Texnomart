@@ -8,7 +8,7 @@ import { BiWorld } from 'react-icons/bi';
 import { FiChevronDown } from 'react-icons/fi'
 
 //images
-import logo from '../../../assets/images/texnomart-logo.a75bf76.svg'
+import logo from '../../../assets/images/texnomart-logo.svg'
 
 const HeaderTop = () => {
   const regionsArr = [
