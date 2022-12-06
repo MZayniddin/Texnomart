@@ -1,5 +1,5 @@
 import "./HeaderCenter.scss";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 //icons
 import {
@@ -19,7 +19,7 @@ import HeaderNavMobile from "../header-nav-mobile/HeaderNavMobile";
 //images
 import logo from "../../../assets/images/texnomart-logo.svg";
 
-const HeaderCenter = () => {
+const HeaderCenter = ({isHeaderFixed}) => {
   const elSearchInput = useRef();
 
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
@@ -28,7 +28,7 @@ const HeaderCenter = () => {
   const [serachIsValid, setSearchIsValid] = useState(false);
 
   return (
-    <div className="header-center">
+    <div className="header-center" style={isHeaderFixed ? {padding: "12px 0px"} : null}>
       <button
         className="header-center-catalog-bars"
         onClick={() => {

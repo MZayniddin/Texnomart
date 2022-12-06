@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  z-index: 8;
+  background-color: #f7f7f7;
+}
+
+.header__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 2%);
+  z-index: 50;
+  background-color: #fff;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,.05));
+}
+
+@media screen and (max-width: 1024px) {
+  .header__fixed {
+    background-color: unset;
+    filter: unset;
+  }
+}

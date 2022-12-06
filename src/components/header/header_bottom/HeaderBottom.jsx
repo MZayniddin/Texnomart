@@ -6,7 +6,7 @@ import "./HeaderBottom.scss";
 import { BsGrid } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 
-const HeaderBottom = () => {
+const HeaderBottom = ({isHeaderFixed}) => {
   const [isCatalogActive, setIsCatalogActive] = useState(false);
   const [categories, setCategories] = useState([]);
 
@@ -18,7 +18,7 @@ const HeaderBottom = () => {
   }, []);
 
   return (
-    <div className="header-bottom">
+    <div className="header-bottom" style={isHeaderFixed ? {display: "none"} : null}>
       <button
         className="header-catalog-btn"
         onClick={() => {

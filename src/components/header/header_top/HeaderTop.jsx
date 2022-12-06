@@ -10,7 +10,7 @@ import { FiChevronDown } from 'react-icons/fi'
 //images
 import logo from '../../../assets/images/texnomart-logo.svg'
 
-const HeaderTop = () => {
+const HeaderTop = ({isHeaderFixed}) => {
   const regionsArr = [
     "Toshkent", "Toshkent viloyati", "Buxoro viloyati",
     "Andijon viloyati", "Farg'ona viloyati", "Namangan viloyati",
@@ -24,7 +24,7 @@ const HeaderTop = () => {
   
   const [isLangMouseOver, setIsLangMouseOver] = useState(false);
   return (
-    <div className='header-top'>
+    <div className='header-top' style={isHeaderFixed ? {display: "none"} : {display: "block"}} >
       <div className="container header-top-inner">
         <span className='logo-top-left'>
           <Link to="/">
