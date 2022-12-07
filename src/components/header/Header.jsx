@@ -11,6 +11,8 @@ import CatalogDropdown from "./catalog-dropdown/CatalogDropdown";
 const Header = () => {
   const header = useRef();
   const [isHeaderFixed, setHeaderFixed] = useState(false);
+  const [isCatalogActive, setIsCatalogActive] = useState(false);
+
   useEffect(() => {
     window.onscroll = () => {
       if (window.scrollY > header.current.offsetHeight + 50){
@@ -19,16 +21,16 @@ const Header = () => {
         setHeaderFixed(false)
       }
     }
-  }, [])
+  }, []);
   return (
     <header className={isHeaderFixed ? "header header__fixed" : "header"} ref={header} >
       <HeaderTop isHeaderFixed={isHeaderFixed} />
       <div className="container">
-        <HeaderCenter isHeaderFixed={isHeaderFixed} />
-        <HeaderBottom isHeaderFixed={isHeaderFixed} />
+        <HeaderCenter isHeaderFixed={isHeaderFixed} isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} />
+        <HeaderBottom isHeaderFixed={isHeaderFixed} isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} />
       </div>
       <HeaderApp/>
-      <CatalogDropdown/>
+      <CatalogDropdown isCatalogActive={isCatalogActive}/>
     </header>
   );
 };

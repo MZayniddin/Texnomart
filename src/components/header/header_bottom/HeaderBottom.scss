@@ -4,32 +4,6 @@
   justify-content: space-between;
   padding: 0 0 10px;
 
-  .header-catalog-btn {
-    padding: 10px 16px;
-    background: #fbc100;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-
-    span {
-      height: 24px;
-    }
-
-    .catalog__icon {
-      font-size: 24px;
-    }
-
-    .catalog__text {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: .3px;
-      color: var(--dark-c);
-      margin-left: 12px;
-    }
-  }
-
   .header-bottom-list {
     display: flex;
     width: calc(100% - 130px);
@@ -84,12 +58,6 @@
     }
   }
 
-}
-
-@media screen and (max-width: 1300px) {
-  .header-bottom .header-catalog-btn {
-    margin-right: 30px;
-  }
 }
 
 @media screen and (max-width: 1024px) {

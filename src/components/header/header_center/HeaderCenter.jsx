@@ -1,6 +1,8 @@
 import "./HeaderCenter.scss";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+import searchCatalogData from '../../../dummy-data/search-catalog-data.json';
 //icons
 import {
   FiMenu,
@@ -11,7 +13,7 @@ import {
 } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineSearch } from "react-icons/hi";
-import { BsBoxSeam } from "react-icons/bs";
+import { BsBoxSeam, BsGrid } from "react-icons/bs";
 import { GiScales } from "react-icons/gi";
 
 //components
@@ -19,14 +21,13 @@ import HeaderNavMobile from "../header-nav-mobile/HeaderNavMobile";
 //images
 import logo from "../../../assets/images/texnomart-logo.svg";
 
-const HeaderCenter = ({isHeaderFixed}) => {
+const HeaderCenter = ({isHeaderFixed, setIsCatalogActive, isCatalogActive}) => {
   const elSearchInput = useRef();
 
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
   const [isSearchCatalogActive, setIsSearchCatalogActive] = useState(false);
-  const [activeSearchCatalog, setActiveSearchCatalog] = useState("Barcha mahsulotlar");
+  const [activeSearchCatalog, setActiveSearchCatalog] = useState([0, "Barcha ketegoriyalar"]);
   const [serachIsValid, setSearchIsValid] = useState(false);
-
   return (
     <div className="header-center" style={isHeaderFixed ? {padding: "12px 0px"} : null}>
       <button
@@ -56,6 +57,25 @@ const HeaderCenter = ({isHeaderFixed}) => {
           <img src={logo} alt="Logo of site" />
         </Link>
       </span>
+      <button
+        style={isHeaderFixed ? { display: "flex" } : { display: "none" }}
+        className="header-catalog-btn"
+        onClick={() => {
+          setIsCatalogActive(!isCatalogActive);
+        }}
+      >
+        <span
+          style={isCatalogActive ? { display: "none" } : { display: "block" }}
+        >
+          <BsGrid className="catalog__icon" />
+        </span>
+        <span
+          style={isCatalogActive ? { display: "block" } : { display: "none" }}
+        >
+          <IoClose className="catalog__icon" />
+        </span>
+        <span className="catalog__text">Katalog</span>
+      </button>
       <div className="header-search-all">
         <div className="header-search-top">
           <div className="header-search">
@@ -69,7 +89,7 @@ const HeaderCenter = ({isHeaderFixed}) => {
               }}
             >
               <button className="search-catalog-btn">
-                <span>{activeSearchCatalog}</span>
+                <span>{activeSearchCatalog[1]}</span>
                 <FiChevronDown className="down-icon" />
               </button>
               <div
@@ -82,46 +102,16 @@ const HeaderCenter = ({isHeaderFixed}) => {
               >
                 <ul
                   onClick={(e) => {
-                    setActiveSearchCatalog(e.target.textContent);
                     setIsSearchCatalogActive(false);
                   }}
                 >
-                  <li>
-                    <Link to="/">Barcha ketogoriyalar</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Maishiy texnika</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Ofis jihozlari</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Oshxona uchun texnika</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Uy uchun idishlar</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Avtomobil uchun mahsulotlar</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Iqlim texnikasi</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Televizor va telekartalar</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Telefonlar va gadjetlar</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Kompyuter texnikasi</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Audiotexnika va Hi-Fi</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Bolalar uchun maxsulotlar</Link>
-                  </li>
+                  {
+                    searchCatalogData.map((option, index) =>
+                      <li key={uuidv4()}>
+                        <Link onClick={(e)=>{setActiveSearchCatalog([index, e.target.textContent])}} style={activeSearchCatalog[0] === index ? {background: "rgba(251,193,0,.2)"} : null} to="/">{option}</Link>
+                      </li>  
+                    )
+                  }
                 </ul>
               </div>
             </div>

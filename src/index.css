@@ -61,6 +61,7 @@
   --yellow-c: #fbc100;
   --dark-white-c: #f7f7f7;
   --gray-c: #767676;
+  --grey-c: #BABAC0;
 }
 
 body, html {
@@ -97,6 +98,19 @@ a {
   padding: 0 32px;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
 .scroll-dropdown::-webkit-scrollbar-thumb {
   background: #e8e8e8;
   border-radius: 5px;
@@ -109,8 +123,6 @@ a {
 .scroll-dropdown::-webkit-scrollbar {
   width: 7px;
 }
-
-
 
 button, input, optgroup, select, textarea {
   font-family: inherit;

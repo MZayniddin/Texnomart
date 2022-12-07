@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "category": "Maishiy texnika",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/texnika_dlya_doma.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Tikuv mashinalari",
+            "types": [
+              "Chayka",
+              "Aurora",
+              "Janome",
+              "Bernette",
+              "Overloklar",
+              "Tikuv mashina to'plamlari"
+            ]
+          },
+          {
+            "product": "Kiyim quritgichlar"
+          },
+          {
+            "product": "Yuvish vositasi"
+          },
+          {
+            "product": "Chim o'rgich",
+            "types": [
+              "Bog' uchun chim kesuvchi",
+              "Benzinli chim o'rgich",
+              "Elektr chim o'rgich",
+              "Akkumulyatorli chim o'rgich"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Dazmol taxtalari"
+          },
+          {
+            "product": "Bug' generatorlari",
+            "types": [
+              "Elektr bug' generatorlari",
+              "Rowenta bug' generatorlari",
+              "Philips bug' generatorlari",
+              "Braun bug' generatorlari",
+              "Bosch bug' generatorlari",
+              "Tefal bug' generatorlari"
+
+            ]
+          },
+          {
+            "product": "Vertikal bug' mashinasi",
+            "types": [
+              "Kiyim uchun bug' mashina",
+              "Simsiz bug' mashinasi",
+              "Philips bug' mashinasi",
+              "Polaris bug' mashinasi",
+              "Tefal bug' mashinasi"
+            ]
+          },
+          {
+            "product": "Dazmol",
+            "types": [
+              "Simsiz dazmollar",
+              "Dazmollash tizimi",
+              "Simli dazmollar",
+              "Bug'li dazmollar",
+              "Panasonic dazmollari",
+              "Rowenta dazmollari",
+              "Gorenje dazmollari",
+              "Shivaki dazmollari",
+              "Philips dazmollari",
+              "Polaris dazmollari",
+              "Bosch dazmollari",
+              "Braun dazmollari",
+              "VITEK dazmollari",
+              "Neos dazmollari",
+              "Tefal dazmollari",
+              "Artel dazmollari"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Simsiz changyutgish",
+            "types": [
+              "Vertikal simsiz changyutgichlar",
+              "Uy uchun",
+              "Polaris changyutgichlari",
+              "Philips changyutgichlari",
+              "Tefal changyutgichlari",
+              "LG changyutgichlari"
+            ]
+          },
+          {
+            "product": "Robot changyutgish",
+            "types": [
+              "Barcha robot changyutgichlar",
+              "Xiaomi robot changyutgichlari",
+              "Polaris robot changyutgichlari",
+              "LG robot changyutgichlari"
+            ]
+          },
+          {
+            "product": "Changyutgish",
+            "types": [
+              "Barcha changyutgichlar",
+              "Samsung changyutgichlar",
+              "Gorenje changyutgichlar",
+              "Sencor changyutgichlar",
+              "Philips changyutgichlar",
+              "Avalon changyutgichlar",
+              "Bosch changyutgichlar",
+              "Konig changyutgichlar",
+              "Tefal changyutgichlar",
+              "Artel changyutgichlar",
+              "LG changyutgichlar",
+              "Qo'l changyutgichlari",
+              "Yuvuvchi changyutgichlar",
+              "Akva changyutgich",
+              "Standart",
+              "Vertikal",
+              "Konteynerli",
+              "Simsiz changyutgichlar",
+              "Kompressorli",
+              "Zaryadlanuvchi",
+              "Chang yig'uvchi bilan",
+              "Chang yutgichlar uchun filtrlar"
+            ]
+          },
+          {
+            "product": "Kulerlar",
+            "types": [
+              "Dispenserlar",
+              "Vital",
+              "Bona"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Kir yuvish mashinalari",
+            "types": [
+              "Barcha kir yuvish mashinalari",
+              "Whirlpool kir yuvish mashinalari",
+              "Electrolux kir yuvish mashinalari",
+              "Samsung kir yuvish mashinalari",
+              "Indesit kir yuvish mashinalari",
+              "Shivaki kir yuvish mashinalari",
+              "Bosch kir yuvish mashinalari",
+              "Atlant kir yuvish mashinalari",
+              "Beko kir yuvish mashinalari",
+              "Artel kir yuvish mashinalari",
+              "LG kir yuvish mashinalari",
+              "Tor kir yuvish mashinalari",
+              "Avtomat",
+              "Quritgichli",
+              "Ovozsiz kir yuvish mashinalari",
+              "Hamyonbob",
+              "Ixcham kir yuvish mashinalari",
+              "Yarimavtomat",
+              "Invertorli",
+              "Rakvina osti",
+              "O'rnatiladigan",
+              "Premium kir yuvish mashina",
+              "To'g'ridan-to'g'ri dvigatelli",
+              "Frontal yuklashli",
+              "Vertikal yuklashli"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Ofis jihozlari",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/ofisnaya_texnika.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Ofis noutbuklari"
+          },
+          {
+            "product": "Shaxsiy kompyuterlar"
+          },
+          {
+            "product": "printerlar",
+            "types": [
+              "HP printerlari"
+            ]
+          },
+          {
+            "product": "Klaviatura va sichqoncha"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Ofis monitorlari"
+          },
+          {
+            "product": "Proyektorlar"
+          },
+          {
+            "product": "Suv sovutgichlar"
+          },
+          {
+            "product": "Ofis mebeli"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Wi-Fi Routerlar",
+            "types": [
+              "Barcha Wi-fi routerlar",
+              "TP-Link routerlar",
+              "D-Link routerlar",
+              "Xiaomi routerlar",
+              "Tenda routerlar"
+            ]
+          },
+          {
+            "product": "Hub elektr uzatgichlar"
+          },
+          {
+            "product": "Noutbuk sumkalari"
+          },
+          {
+            "product": "Monobloklar"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Qalamlar"
+          },
+          {
+            "product": "Qog'oz maydalagichlar"
+          }
+        ]
+      }
+    ]
+  }
+]

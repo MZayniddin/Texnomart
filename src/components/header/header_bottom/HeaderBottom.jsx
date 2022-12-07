@@ -6,8 +6,7 @@ import "./HeaderBottom.scss";
 import { BsGrid } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 
-const HeaderBottom = ({isHeaderFixed}) => {
-  const [isCatalogActive, setIsCatalogActive] = useState(false);
+const HeaderBottom = ({isHeaderFixed, isCatalogActive, setIsCatalogActive}) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
