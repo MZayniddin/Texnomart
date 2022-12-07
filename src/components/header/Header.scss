@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 8;
-  background-color: #f7f7f7;
+  background-color: #f7f7f7 !important;
 }
 
 .header__fixed {
@@ -49,7 +49,6 @@
 
 @media screen and (max-width: 1024px) {
   .header__fixed {
-    background-color: unset;
     filter: unset;
   }
 }

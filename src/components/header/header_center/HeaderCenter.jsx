@@ -1,8 +1,8 @@
 import "./HeaderCenter.scss";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from 'uuid';
-import searchCatalogData from '../../../dummy-data/search-catalog-data.json';
+import { v4 as uuidv4 } from "uuid";
+import searchCatalogData from "../../../dummy-data/search-catalog-data.json";
 //icons
 import {
   FiMenu,
@@ -21,7 +21,11 @@ import HeaderNavMobile from "../header-nav-mobile/HeaderNavMobile";
 //images
 import logo from "../../../assets/images/texnomart-logo.svg";
 
-const HeaderCenter = ({isHeaderFixed, setIsCatalogActive, isCatalogActive}) => {
+const HeaderCenter = ({
+  isHeaderFixed,
+  setIsCatalogActive,
+  isCatalogActive,
+}) => {
   const elSearchInput = useRef();
 
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
@@ -29,7 +33,10 @@ const HeaderCenter = ({isHeaderFixed, setIsCatalogActive, isCatalogActive}) => {
   const [activeSearchCatalog, setActiveSearchCatalog] = useState([0, "Barcha ketegoriyalar"]);
   const [serachIsValid, setSearchIsValid] = useState(false);
   return (
-    <div className="header-center" style={isHeaderFixed ? {padding: "12px 0px"} : null}>
+    <div
+      className="header-center"
+      style={isHeaderFixed ? { padding: "12px 0px" } : null}
+    >
       <button
         className="header-center-catalog-bars"
         onClick={() => {
@@ -105,13 +112,23 @@ const HeaderCenter = ({isHeaderFixed, setIsCatalogActive, isCatalogActive}) => {
                     setIsSearchCatalogActive(false);
                   }}
                 >
-                  {
-                    searchCatalogData.map((option, index) =>
-                      <li key={uuidv4()}>
-                        <Link onClick={(e)=>{setActiveSearchCatalog([index, e.target.textContent])}} style={activeSearchCatalog[0] === index ? {background: "rgba(251,193,0,.2)"} : null} to="/">{option}</Link>
-                      </li>  
-                    )
-                  }
+                  {searchCatalogData.map((option, index) => (
+                    <li key={uuidv4()}>
+                      <Link
+                        onClick={(e) => {
+                          setActiveSearchCatalog([index, e.target.textContent]);
+                        }}
+                        style={
+                          activeSearchCatalog[0] === index
+                            ? { background: "rgba(251,193,0,.2)" }
+                            : null
+                        }
+                        to="/"
+                      >
+                        {option}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

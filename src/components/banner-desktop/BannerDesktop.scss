@@ -1,0 +1,66 @@
+.banner-carousel {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.btn-next, .btn-prev {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--white-c);
+  border: 1px solid #ececec;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: var(dark-c);
+}
+
+.btn-next {
+  right: 44px;
+  padding-left: 3px;
+}
+
+.btn-prev {
+  left: 44px;
+  padding-right: 3px;
+}
+
+.chevron-icon {
+  font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--dark-c);
+  opacity: 1;
+  margin: 0 4px;
+  border: 2px solid transparent;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: transparent;
+  border: 2px solid var(--dark-c);
+}
+
+@media screen and (max-width: 1300px) {
+  .btn-next {
+    right: 10px;
+  }
+  .btn-prev {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-carousel {
+    margin-bottom: 16px;
+  }
+  .banner-desktop {
+    display: none;
+  }
+}
