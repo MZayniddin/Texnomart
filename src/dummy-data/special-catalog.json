@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Smartfonlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/smartfon.svg"
+  },
+  {
+    "title": "Changyutgichlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/pilesos.svg"
+  },
+  {
+    "title": "Planshetlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/planshet.svg"
+  },
+  {
+    "title": "Muzlatgichlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/xolodilnik.svg"
+  },
+  {
+    "title": "Havo sovutgichlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/klimaticheskaya-texnika.svg"
+  },
+  {
+    "title": "Televizorlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/lg.svg"
+  },
+  {
+    "title": "Fenlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/feni.svg"
+  },
+  {
+    "title": "Kir yuvish mashinalari",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/special-slider/stiralnaya_mashina.svg"
+  }
+]

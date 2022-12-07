@@ -1,6 +1,10 @@
 .banner-carousel {
   position: relative;
   margin-bottom: 40px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .btn-next, .btn-prev {

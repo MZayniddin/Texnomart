@@ -30,7 +30,7 @@ const BrandsSlider = () => {
               nextEl: ".swiper-brand-next",
             }}
             modules={[Navigation]}
-            className="swiper-container"
+            className="mySwiper"
           >
             {brandsData.map((brand) => (
               <SwiperSlide className="brand-item" key={uuidv4()}>
@@ -40,10 +40,10 @@ const BrandsSlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <button className="swiper-brand-prev">
+          <button className="swiper-brand-prev custom-btn-prev">
             <FiChevronLeft />
           </button>
-          <button className="swiper-brand-next">
+          <button className="swiper-brand-next custom-btn-next">
             <FiChevronRight />
           </button>
         </div>
