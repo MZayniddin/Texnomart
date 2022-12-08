@@ -61,6 +61,13 @@
   margin: -10px 0px;
 }
 
+@media screen and (max-width: 1200px) {
+  .custom-btn-next,
+  .custom-btn-prev {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .brands-slider {
     margin-bottom: 3rem;

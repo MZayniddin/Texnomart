@@ -12,7 +12,7 @@ import "./CatalogSlider.scss";
 
 //icons
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-
+import { BsGrid } from 'react-icons/bs';
 // import required modules
 import { Navigation } from "swiper";
 
@@ -28,11 +28,20 @@ const CatalogSlider = () => {
           </div>
           <div className="swiper-wrapper">
             <Swiper
-              slidesPerView={5}
+              slidesPerView={"auto"}
               spaceBetween={15}
               navigation={{
                 prevEl: ".special-catalog-prev",
                 nextEl: ".special-catalog-next",
+              }}
+              breakpoints={{
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 16
+                },
+                1200: {
+                  slidesPerView: 5
+                }
               }}
               modules={[Navigation]}
               className="mySwiper"
@@ -60,6 +69,10 @@ const CatalogSlider = () => {
             </button>
           </div>
         </div>
+        <button className="btn-catalog-home">
+            <BsGrid/>
+            <span>Maxsulotlar katalogi</span>
+        </button>
       </div>
     </div>
   );

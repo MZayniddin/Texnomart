@@ -10,27 +10,21 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: linear-gradient(0deg,#fff,#fff),#f7f7f7;
-    border: 1px solid hsla(0,0%,92.5%,.7);
+    background: linear-gradient(0deg, #fff, #fff), #f7f7f7;
+    border: 1px solid hsla(0, 0%, 92.5%, .7);
     box-shadow: 0 2px 24px rgb(0 0 0 / 6%);
     border-radius: 12px;
     padding: 16px 24px;
   }
 
-
-
-  .catalog-image{
+  .catalog-image {
     height: 44px;
     min-width: 44px;
     max-width: 44px;
-    padding: 0;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    margin-bottom: 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    border-radius: 12px;
   }
 
   .special-catalog__title {
@@ -38,13 +32,33 @@
     margin-left: 24px;
     color: var(--dark-c);
   }
+
+  .btn-catalog-home {
+    background: var(--yellow-c);
+    border-radius: 6px;
+    padding: 11px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 20px;
+
+    span{
+      display: inline-block;
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--dark-c);
+    }
+  }
 }
 
 .special-catalog {
   margin-bottom: 1rem;
 }
 
-.product-card-title{
+.product-card-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,5 +71,45 @@
 
   .swiper {
     margin-top: -10px;
+  }
+
+  .catalog-slider {
+    .special-catalog__link {
+      width: 100%;
+      display: block;
+      background: none;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .swiper-slide {
+      max-width: 94px;
+    }
+
+    .catalog-image {
+      height: 94px;
+      width: 94px;
+      max-width: 94px;
+      padding: 22px;
+      background-color: var(--white-c);
+      border: 1px solid hsla(0, 0%, 92.5%, .7);
+      box-shadow: 0 2px 24px rgb(0 0 0 / 6%);
+      margin-bottom: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .special-catalog__title {
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.24rem;
+      margin-left: 0;
+    }
+
+    .btn-catalog-home {
+      display: flex;
+    }
   }
 }

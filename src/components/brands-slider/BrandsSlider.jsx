@@ -23,7 +23,7 @@ const BrandsSlider = () => {
       <div className="container">
         <div className="brands-wrapper">
           <Swiper
-            slidesPerView={8}
+            slidesPerView={"auto"}
             spaceBetween={20}
             navigation={{
               prevEl: ".swiper-brand-prev",
