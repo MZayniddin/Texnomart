@@ -8,7 +8,6 @@ import { FiChevronRight } from 'react-icons/fi'
 
 const CatalogDropdown = ({isCatalogActive}) => {
   const [activeList, setActiveList] = useState(0);
-  console.log(activeList)
   return (
     <div className={isCatalogActive ? 'catalog-dropdown catalog-dropdown__active' : "catalog-dropdown"}>
       <div className="container">

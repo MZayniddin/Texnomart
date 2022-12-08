@@ -5,6 +5,7 @@ import BannerMobile from "../../components/banner-mobile/BannerMobile"
 import BrandsSlider from "../../components/brands-slider/BrandsSlider"
 import CatalogSlider from "../../components/catalog-slider/CatalogSlider"
 import Header from "../../components/header/Header"
+import Main from "../../components/main/Main"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <BannerMobile/>
       <BrandsSlider/>
       <CatalogSlider/>
+      <Main/>
     </>
   )
 }

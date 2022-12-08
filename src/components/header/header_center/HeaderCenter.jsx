@@ -8,12 +8,11 @@ import {
   FiMenu,
   FiChevronDown,
   FiUser,
-  FiHeart,
-  FiShoppingCart,
+  FiHeart
 } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineSearch } from "react-icons/hi";
-import { BsBoxSeam, BsGrid } from "react-icons/bs";
+import { BsBoxSeam, BsGrid, BsCart3 } from "react-icons/bs";
 import { GiScales } from "react-icons/gi";
 
 //components
@@ -196,7 +195,7 @@ const HeaderCenter = ({
         </Link>
         <button className="right-action-btn" to="/">
           <div className="icon-svg">
-            <FiShoppingCart />
+            <BsCart3/>
           </div>
           <span className="right-action__title">Savatcha</span>
         </button>
