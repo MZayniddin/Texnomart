@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import AppAds from "../app-ads/AppAds";
 import CarouselProducts from "../carousel-products/CarouselProducts";
 import HomeProducts from "../home-products/HomeProducts";
+import InstallmentInfo from "../installment-info/InstallmentInfo";
 
 
 const Main = () => {
@@ -29,6 +30,7 @@ const Main = () => {
         <CarouselProducts productData={products.slice(60, 80)} status="Tavsiya etamiz" id={4}/>
       </HomeProducts>
       <AppAds/>
+      <InstallmentInfo/>
     </div>
   )
 }
