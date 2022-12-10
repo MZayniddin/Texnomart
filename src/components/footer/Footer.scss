@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--dark-c);
+  color: var(--white-c);
+}
+
+.footer__wrap {
+  padding: 54px 20px 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__wrap {
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__wrap {
+      padding: 36px 10px;
+    }
+}

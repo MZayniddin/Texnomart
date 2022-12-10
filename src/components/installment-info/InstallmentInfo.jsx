@@ -23,6 +23,7 @@ const InstallmentInfo = () => {
         </h1>
         <Swiper
           slidesPerView={1}
+          loop={true}
           pagination={{ clickable: true }}
           modules={[Pagination]}
           className="installment-swiper"
