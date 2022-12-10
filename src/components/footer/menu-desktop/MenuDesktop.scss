@@ -1,0 +1,30 @@
+.menu-desktop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-wrap {
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    color: var(--white-c);
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: block;
+    color: var(--white-c);
+    transition: all .3s ease;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: .2px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-desktop {
+    justify-content: space-between;
+  }
+}

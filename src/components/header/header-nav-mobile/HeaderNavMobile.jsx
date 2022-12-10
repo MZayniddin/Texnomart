@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import dataLinks from '../../../dummy-data/site-links-data.json';
 import './HeaderNavMobile.scss';
 
 // icons 
@@ -109,61 +111,17 @@ const HeaderNavMobile = ({isHeaderNavMobileActive, setIsHeaderNavMobileActive}) 
               </span>
               <ul className='nav-accordion-content'
                 style={isAccordionActive ? {height: "396px"} : {height: "0", display: "none"}}>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Biz haqimizda
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Mahsulotni to'lash usullari
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Bepul yetkazib berish
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Mahsulotlar uchun kafolat
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Bonus tizimi
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Yordam
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Ishlab chiqaruvchilar haqida
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Kontaktlar
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Maxsulotni qaytarish
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    Texnomartda ishlash
-                  </Link>
-                </li>
-                <li>
-                  <Link className='link-accordion' to="/">
-                    IMEI ni tekshirish
-                  </Link>
-                </li>
+                {
+                  dataLinks.map(item => 
+                    item.links.map(link =>
+                    <li key={uuidv4()}>
+                      <Link className='link-accordion' to="/">
+                        {link}
+                      </Link>
+                    </li>
+                    )  
+                  )
+                }
               </ul>
             </li>
             <li>

@@ -11,6 +11,8 @@ import {
 
 //images
 import playLogo from '../../../assets/images/playmarket-logo.svg'
+//components
+import MenuDesktop from "../menu-desktop/MenuDesktop";
 
 const FooterTop = () => {
   return (
@@ -79,7 +81,9 @@ const FooterTop = () => {
           <FaTelegramPlane className="telegram-bot__icon" /> <span>Bonusingizni bilib oling</span>
         </a>
       </div>
-      <div className="footer__right"></div>
+      <div className="footer__right">
+        <MenuDesktop/>
+      </div>
     </div>
   );
 };
