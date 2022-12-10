@@ -121,6 +121,8 @@
 
   .footer__left {
     padding-bottom: 16px;
+    max-width: unset;
+    flex: unset;
 
     .footer__content {
       margin-bottom: 24px;
