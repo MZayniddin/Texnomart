@@ -1,0 +1,47 @@
+.menu-mobile {
+  display: none;
+
+  .menu-wrap__title {
+    font-size: 16px;
+    line-height: 110%;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .accordion__icon {
+    transition: height 300ms linear 0s, transform 300ms linear 0s;
+    font-size: 18px;
+  }
+
+  .menu-wrap__link {
+    font-size: 16px;
+    line-height: 180%;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  .accordion__content {
+    transition: height .3s linear;
+    overflow: hidden;
+    height: 0;
+
+    &_active {
+      height: 145px;
+    }
+  }
+
+  .accordion-enter-active, .accordion-leave-active {
+    will-change: height,opacity;
+    overflow: hidden;
+  }
+}
+
+.accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

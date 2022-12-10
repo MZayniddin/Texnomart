@@ -97,6 +97,10 @@
   .telegram-bot {
     display: inline-block;
   }
+
+  .menu-mobile .menu-wrap {
+    padding-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -138,10 +142,16 @@
   }
 
   .footer__right {
+    max-width: unset;
+    flex: unset;
     border-bottom: 1px solid #575757;
     
     .menu-desktop {
       display: none;  
+    }
+
+    .menu-mobile {
+      display: block;
     }
   }
 }

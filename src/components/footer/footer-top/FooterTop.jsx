@@ -13,6 +13,7 @@ import {
 import playLogo from '../../../assets/images/playmarket-logo.svg'
 //components
 import MenuDesktop from "../menu-desktop/MenuDesktop";
+import MenuMobile from "../menu-mobile/MenuMobile";
 
 const FooterTop = () => {
   return (
@@ -82,6 +83,7 @@ const FooterTop = () => {
         </a>
       </div>
       <div className="footer__right">
+        <MenuMobile/>
         <MenuDesktop/>
       </div>
     </div>
