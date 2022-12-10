@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imgURL": "https://texnomart.uz/_nuxt/img/installment-1.da8d77c.svg",
+    "title": "Muddatli to'lovga sotib olish",
+    "text": "Texnomartda maishiy texnika mahsulotlari uchun qulay onlayn to'lov"
+  },
+  {
+    "id": 2,
+    "imgURL": "https://texnomart.uz/_nuxt/img/installment-2.de0c0ae.svg",
+    "title": "Bepul yetkazib berish",
+    "text": "Texnomartga tovarlarni yetkazib berish shartlari"
+  },
+  {
+    "id": 3,
+    "imgURL": "https://texnomart.uz/_nuxt/img/installment-3.575d98a.svg",
+    "title": "Maxsulotlar uchun kafolat",
+    "text": "Texnomartda mahsulotning kafolati va qaytarilishi haqida hamma narsani bilib oling"
+  },
+  {
+    "id": 4,
+    "imgURL": "https://texnomart.uz/_nuxt/img/installment-4.4086694.svg",
+    "title": "Bonus tizimi",
+    "text": "Bonus tizimi"
+  },
+  {
+    "id": 5,
+    "imgURL": "https://texnomart.uz/_nuxt/img/installment-5.513f513.svg",
+    "title": "Yordam",
+    "text": "Ko'p beriladigan savollar"
+  }
+]

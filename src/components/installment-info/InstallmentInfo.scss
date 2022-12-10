@@ -9,6 +9,53 @@
     line-height: 32px;
     margin-bottom: 24px;
   }
+
+  .swiper-wrapper {
+    padding: 30px 0;
+    border-radius: 6px;
+    border: 1px solid #ececec;
+  }
+
+  .swiper-pagination {
+    display: none;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-item {
+    max-width: 20%;
+    min-height: 160px;
+    display: block;
+    padding: 0 16px;
+    border-left: 1px solid #ececec;
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .installment-info {
+    .swiper-item {
+      max-width: unset;
+      min-height: unset;
+      border-left: 0;
+      width: 100%;
+      padding: 30px;
+    }
+
+    .swiper-wrapper {
+      padding: 0;
+      border-radius: 0;
+      border: 0;
+    }
+
+    .swiper-pagination {
+      display: flex;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

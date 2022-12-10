@@ -1,0 +1,44 @@
+.installment-info__img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: var(--dark-white-c);
+  margin: 0 auto 18px;
+}
+
+.installment-info__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--dark-c);
+  margin-bottom: 10px;
+}
+
+.installment-info__desc {
+  text-align: center;
+  max-width: 225px;
+  margin: 0 auto;
+  color: var(--dark-c);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .installment-info__title {
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .installment-info__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .installment-info__desc {
+    font-size: 12px;
+  }
+}
