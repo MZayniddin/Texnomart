@@ -1,18 +1,18 @@
-import './Footer.scss'
+import "./Footer.scss";
 
 //components
-import FooterTop from "./footer-top/FooterTop"
-import FooterBottom from "./footer-bottom/FooterBottom"
+import FooterTop from "./footer-top/FooterTop";
+import FooterBottom from "./footer-bottom/FooterBottom";
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className="footer">
       <div className="footer__wrap container">
-        <FooterTop/>
-        <FooterBottom/>
+        <FooterTop />
+        <FooterBottom />
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

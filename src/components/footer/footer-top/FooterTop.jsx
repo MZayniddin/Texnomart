@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 //images
-import playLogo from '../../../assets/images/playmarket-logo.svg'
+import playLogo from "../../../assets/images/playmarket-logo.svg";
 //components
 import MenuDesktop from "../menu-desktop/MenuDesktop";
 import MenuMobile from "../menu-mobile/MenuMobile";
@@ -38,7 +38,7 @@ const FooterTop = () => {
               target="_blank"
               className="social__link"
             >
-              <FaFacebookF/>
+              <FaFacebookF />
             </a>
           </li>
           <li className="social__item">
@@ -48,7 +48,7 @@ const FooterTop = () => {
               target="_blank"
               className="social__link"
             >
-              <FaTelegramPlane/>
+              <FaTelegramPlane />
             </a>
           </li>
           <li className="social__item">
@@ -58,7 +58,7 @@ const FooterTop = () => {
               target="_blank"
               className="social__link"
             >
-              <FaInstagram/>
+              <FaInstagram />
             </a>
           </li>
           <li className="social__item">
@@ -68,23 +68,36 @@ const FooterTop = () => {
               target="_blank"
               className="social__link"
             >
-              <FaYoutube/>
+              <FaYoutube />
             </a>
           </li>
         </ul>
-        <a className="footer__play" href="https://play.google.com/store/apps/details?id=com.texnomart.app" rel="noreferrer" target="_blank">
+        <a
+          className="footer__play"
+          href="https://play.google.com/store/apps/details?id=com.texnomart.app"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img src={playLogo} alt="" />
         </a>
         <div className="footer__address">
-          <Link to="/">Do`konlar manzillari <span>Toshkent</span></Link>
+          <Link to="/">
+            Do`konlar manzillari <span>Toshkent</span>
+          </Link>
         </div>
-        <a className="telegram-bot" href="https://t.me/Texnomart_retail_bot" rel="noreferrer" target="_blank" >
-          <FaTelegramPlane className="telegram-bot__icon" /> <span>Bonusingizni bilib oling</span>
+        <a
+          className="telegram-bot"
+          href="https://t.me/Texnomart_retail_bot"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <FaTelegramPlane className="telegram-bot__icon" />{" "}
+          <span>Bonusingizni bilib oling</span>
         </a>
       </div>
       <div className="footer__right">
-        <MenuMobile/>
-        <MenuDesktop/>
+        <MenuMobile />
+        <MenuDesktop />
       </div>
     </div>
   );

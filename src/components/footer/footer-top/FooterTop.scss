@@ -108,6 +108,7 @@
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
+
   .footer__right {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
@@ -147,9 +148,9 @@
     max-width: unset;
     flex: unset;
     border-bottom: 1px solid #575757;
-    
+
     .menu-desktop {
-      display: none;  
+      display: none;
     }
 
     .menu-mobile {
