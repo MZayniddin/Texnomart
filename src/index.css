@@ -67,6 +67,7 @@
 body, html {
   color: #333;
   font-weight: 400;
+  -webkit-text-size-adjust: 100%;
 }
 
 ol, ul {
@@ -93,6 +94,7 @@ a {
 
 .container {
   max-width: 1488px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 32px;
 }

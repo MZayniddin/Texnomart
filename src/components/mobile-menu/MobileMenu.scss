@@ -1,0 +1,45 @@
+.mobile-menu {
+  display: none;
+  background-color: var(--dark-c);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 51;
+
+  &__item {
+    position: relative;
+    max-width: 52px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--dark-white-c);
+  }
+
+  &__icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+}
+
+.mobile-menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu__wrap {
+    padding: 7px 30px;
+  }
+}
