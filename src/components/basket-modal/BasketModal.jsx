@@ -31,7 +31,7 @@ const BasketModal = () => {
                 <ModalProductItem/>
               </div>
               <div className="basket-modal__bottom">
-
+                
               </div>
             </div>
           </div>
