@@ -1,0 +1,126 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1049;
+  background-color: var(--black-c);
+  opacity: .5;
+}
+
+.modal-content {
+  position: fixed;
+  inset: 0;
+}
+
+.basket-modal {
+  .modal-dialog {
+    display: flex;
+    -webkit-box-align: center;
+    position: relative;
+    z-index: 1050;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    height: auto;
+  }
+
+  .modal-site-inner {
+    max-width: 900px;
+    position: relative;
+    background-color: var(--white-c);
+    z-index: 1050;
+    width: 100%;
+    margin: 0 auto;
+    pointer-events: auto;
+    border-radius: 6px;
+    height: 100%;
+  }
+
+  .modal-content__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 40px;
+  }
+}
+
+.modal-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1050;
+  background-color: rgba(0, 0, 0, .5);
+  transition: transform .2s linear;
+}
+
+.modal-close-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ececec;
+  border-radius: 50px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal-content__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.empty-basket {
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+
+  &__icon {
+    margin-bottom: 32px;
+    font-size: 64px;
+    color: var(--grey-c);
+  }
+
+  &__mini-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .basket-modal {
+    background-color: var(--white-c);
+
+    .modal-dialog {
+      min-height: calc(100% - 3.5rem);
+      margin: 0;
+      align-items: flex-start;
+      height: 100%;
+    }
+
+    .modal-site-inner {
+      max-width: unset;
+      border-radius: 0;
+    }
+
+    .modal-content__inner {
+      padding: 28px 15px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .basket-modal .modal-dialog {
+    min-height: calc(100% - 1rem);
+  }
+}

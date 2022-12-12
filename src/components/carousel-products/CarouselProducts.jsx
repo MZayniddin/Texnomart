@@ -22,7 +22,6 @@ const CarouselProducts = ({ productData, id, status }) => {
   return (
     <div className="carousel-swiper-products">
       <Swiper
-
         slidesPerView={"auto"}
         navigation={{
           prevEl: `.button-prev${id}`,
