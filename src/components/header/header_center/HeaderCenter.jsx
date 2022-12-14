@@ -24,6 +24,7 @@ const HeaderCenter = ({
   isHeaderFixed,
   setIsCatalogActive,
   isCatalogActive,
+  setBasketActive
 }) => {
   const elSearchInput = useRef();
 
@@ -194,7 +195,7 @@ const HeaderCenter = ({
           <span className="right-action__title">Sevimlilar</span>
         </Link>
         <button className="right-action-btn" to="/">
-          <div className="icon-svg">
+          <div onClick={()=>{setBasketActive(true)}} className="icon-svg">
             <BsCart3/>
           </div>
           <span className="right-action__title">Savatcha</span>

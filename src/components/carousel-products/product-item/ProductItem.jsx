@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 //icons 
 import { BsCart3, BsCartCheck } from 'react-icons/bs';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
@@ -7,6 +8,13 @@ import { GiScales } from 'react-icons/gi';
 
 import './ProductItem.scss';
 const ProductItem = ({ id, image, title, price}) => {
+  const dispatch = useDispatch();
+  const product = {
+    id: id,
+    image: image,
+    title: title,
+    price: price
+  }
   return (
     <div className="product-item-component">
       <div className="product-top">
@@ -31,7 +39,9 @@ const ProductItem = ({ id, image, title, price}) => {
                   <span className="icon-before">
                     <BsCartCheck/>
                   </span>
-                  <span className="basket-btn-text">Savatchaga</span>
+                  <span className="basket-btn-text" onClick={()=>{
+                    dispatch({type: "ADD_TO_CART", product: product})
+                  }}>Savatchaga</span>
                 </button>
               </div>
               <div className="basket-count">

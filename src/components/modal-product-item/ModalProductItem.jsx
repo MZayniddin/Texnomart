@@ -7,15 +7,19 @@ import { FiHeart } from "react-icons/fi";
 
 import "./ModalProductItem.scss";
 
-const ModalProductItem = () => {
+const ModalProductItem = ({ id, image, title, price }) => {
   return (
     <div className="modal-product__item">
       <div className="product__left">
-        <Link to="/"></Link>
-        <div className="product__info">
+        <Link to="/">
           <div className="product__img">
-            <img src="" alt="" />
+            <img src={image} alt="" />
           </div>
+        </Link>
+        <div className="product__info">
+          {/* lasdkj */}
+          <p>{title}</p>
+          <strong>{price}$</strong>
         </div>
       </div>
       <div className="product__right">

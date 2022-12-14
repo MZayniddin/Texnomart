@@ -8,7 +8,7 @@ import HeaderBottom from "./header_bottom/HeaderBottom";
 import HeaderApp from "./header_app/HeaderApp";
 import CatalogDropdown from "./catalog-dropdown/CatalogDropdown";
 
-const Header = () => {
+const Header = ({setBasketActive}) => {
   const header = useRef();
   const [isHeaderFixed, setHeaderFixed] = useState(false);
   const [isCatalogActive, setIsCatalogActive] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
     <header className={isHeaderFixed ? "header header__fixed" : "header"} ref={header} >
       <HeaderTop isHeaderFixed={isHeaderFixed} />
       <div className="container">
-        <HeaderCenter isHeaderFixed={isHeaderFixed} isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} />
+        <HeaderCenter setBasketActive={setBasketActive} isHeaderFixed={isHeaderFixed} isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} />
         <HeaderBottom isHeaderFixed={isHeaderFixed} isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} />
       </div>
       <HeaderApp/>

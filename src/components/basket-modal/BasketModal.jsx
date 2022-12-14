@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 //icons
 import { CgClose } from "react-icons/cg";
 import { FiShoppingCart } from "react-icons/fi";
@@ -6,14 +7,21 @@ import "./BasketModal.scss";
 //component
 import ModalProductItem from "../modal-product-item/ModalProductItem";
 
-const BasketModal = () => {
+const BasketModal = ({ isBasketActive, setBasketActive }) => {
+  const allAddedProduct = useSelector((state) => state);
+  console.log(allAddedProduct);
   return (
-    <>
+    <div style={isBasketActive ? { display: "block" } : { display: "none" }}>
       <div className="modal-backdrop"></div>
       <div className="basket-modal modal-content">
         <div className="modal-dialog">
           <div className="modal-site-inner">
-            <button className="modal-close-btn">
+            <button
+              onClick={() => {
+                setBasketActive(false);
+              }}
+              className="modal-close-btn"
+            >
               <CgClose />
             </button>
             <div className="modal-content__inner">
@@ -28,16 +36,22 @@ const BasketModal = () => {
                 </div>
               </div>
               <div className="buy-now__content">
-                <ModalProductItem/>
+                {allAddedProduct.cart.map((product) => (
+                  <ModalProductItem
+                    key={product.id}
+                    id={product.id}
+                    image={product.image}
+                    title={product.title}
+                    price={product.price}
+                  />
+                ))}
               </div>
-              <div className="basket-modal__bottom">
-                
-              </div>
+              <div className="basket-modal__bottom"></div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
