@@ -31,7 +31,7 @@ const HeaderCenter = ({
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
   const [isSearchCatalogActive, setIsSearchCatalogActive] = useState(false);
   const [activeSearchCatalog, setActiveSearchCatalog] = useState([0, "Barcha ketegoriyalar"]);
-  const [serachIsValid, setSearchIsValid] = useState(false);
+  const [searchIsValid, setSearchIsValid] = useState(false);
   return (
     <div
       className="header-center"
@@ -150,7 +150,7 @@ const HeaderCenter = ({
               />
               <button
                 className={
-                  serachIsValid ? "clear-search" : "clear-search z-hidden"
+                  searchIsValid ? "clear-search" : "clear-search z-hidden"
                 }
                 onClick={() => {
                   elSearchInput.current.value = "";
