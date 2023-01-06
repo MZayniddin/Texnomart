@@ -16,7 +16,7 @@ import { BsGrid } from 'react-icons/bs';
 // import required modules
 import { Navigation } from "swiper";
 
-const CatalogSlider = () => {
+const CatalogSlider = ({ setMobSidebarActive }) => {
   return (
     <div className="catalog-slider">
       <div className="container">
@@ -69,7 +69,7 @@ const CatalogSlider = () => {
             </button>
           </div>
         </div>
-        <button className="btn-catalog-home">
+        <button className="btn-catalog-home" onClick={()=>{setMobSidebarActive(true)}}>
             <BsGrid/>
             <span>Maxsulotlar katalogi</span>
         </button>

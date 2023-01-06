@@ -24,7 +24,8 @@ const HeaderCenter = ({
   isHeaderFixed,
   setIsCatalogActive,
   isCatalogActive,
-  setBasketActive
+  setBasketActive,
+  setMobSidebarActive
 }) => {
   const elSearchInput = useRef();
 
@@ -58,6 +59,7 @@ const HeaderCenter = ({
       <HeaderNavMobile
         isHeaderNavMobileActive={isHeaderNavMobileActive}
         setIsHeaderNavMobileActive={setIsHeaderNavMobileActive}
+        setMobSidebarActive={setMobSidebarActive}
       />
       <span className="header-center-logo">
         <Link to="/">
