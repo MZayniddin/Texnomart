@@ -193,7 +193,7 @@
             "product": "Shaxsiy kompyuterlar"
           },
           {
-            "product": "printerlar",
+            "product": "Printerlar",
             "types": [
               "HP printerlari"
             ]
@@ -264,30 +264,30 @@
           {
             "product": "Kichik uskunalar",
             "types": [
-              "Блендеры",
-              "Вакууматоры",
-              "Вафельницы",
-              "Грили",
-              "Кухонные весы",
-              "Кухонные комбайны",
-              "Микроволновые печи",
-              "Миксеры",
-              "Мини-печи",
-              "Мультиварки",
-              "Электрические мясорубки",
-              "Пароварки",
-              "Соковыжималки",
-              "Сэндвичницы",
-              "Тостеры",
-              "Фритюрницы",
-              "Электрочайники",
-              "Хлебопечи",
-              "Кофемашины",
-              "Кофеварки",
-              "Кофемолки",
-              "Кофе",
-              "Измельчители",
-              "Сушилка для овощей и фруктов"
+              "Blenderlar",
+              "Havo yutgich",
+              "Vafli pishirgichlar",
+              "Gril va barbekyu",
+              "Oshxona tarozisi",
+              "Oshxona kombaynlari",
+              "Mikroto'lqinli pechlar",
+              "Mikserlar",
+              "Mini-pechlar",
+              "Multipishirgichlar",
+              "Go'sht maydalagichlar",
+              "Bug`da pishirgichlar",
+              "Sharbat chiqargichlar",
+              "Sandvich pishirgichlar",
+              "Tosterlar",
+              "Frityurlar",
+              "Elektr choyqaynatgichlar",
+              "Non pishirgichlar",
+              "Qahva mashinalari",
+              "Qahva qaynatgichlar",
+              "Qahva maydalagichlar",
+              "Qahva",
+              "Maydalagichlar",
+              "Sabzavotlar va meva quritgichlar"
             ]
           }
         ]
@@ -297,10 +297,10 @@
           {
             "product": "Katta oshxona anjomlari",
             "types": [
-              "Холодильники",
-              "Морозильники",
-              "Газовые плиты",
-              "Посудомоечные машины"
+              "Muzlatgichlar",
+              "Muzlatish kameralari",
+              "Gaz plitalari",
+              "Idish yuvish mashinalari"
             ]
           }
         ]
@@ -310,9 +310,9 @@
           {
             "product": "O'rnatiladigan maishiy texnika",
             "types": [
-              "Варочные панели",
-              "Кухонные вытяжки",
-              "Духовки"
+              "Pishirish panellari",
+              "Tutun tortgichlar",
+              "Pechlar"
             ]
           }
         ]
@@ -329,17 +329,17 @@
           {
             "product": "Ovqat pishirish uchun",
             "types": [
-              "Сковородки",
-              "Кухонные принадлежности",
-              "Ножи и наборы ножей",
-              "Сковородки-блинная",
-              "Формы для выпечки",
-              "Сковородки-Гриль",
-              "Сковородки-ВОК",
-              "Наборы посуды",
-              "Сотейники",
-              "Кастрюли",
-              "Казаны"
+              "Tovalar",
+              "Oshxona anjomlari",
+              "Pichoqlar va pichoq to'plamlari",
+              "Quymoq tayyorlaydigan tovalar",
+              "Pishirish uchun qoliplar",
+              "Gril-tovoqlar",
+              "WOK-tovalar",
+              "Idish-tovoq to'plamlari",
+              "Tomonlari baland tovalar",
+              "Kastryullar",
+              "Qozonlar"
             ]
           }
         ]
@@ -349,16 +349,16 @@
           {
             "product": "Stol uchun idishlar",
             "types": [
-              "Кувшины и графины",
-              "Блюдца и салатницы",
-              "Столовые сервизы",
-              "Стеклянные банки",
-              "Бокалы и фужеры",
-              "Столовые наборы",
-              "Кружки и чашки",
-              "Молочники",
-              "Чайники",
-              "Стаканы"
+              "Ko'za va grafinlar",
+              "Likopcha va salat idishlari",
+              "Oshxona to'plamlari",
+              "Shisha idishlar",
+              "Stakan va sharob stakanlari",
+              "Oshxona servisi",
+              "Chashka va krujkalar",
+              "Sut idishi",
+              "Choynak",
+              "Suv stakanlari"
             ]
           }
         ]
@@ -368,11 +368,11 @@
           {
             "product": "Yordamchi idishlar",
             "types": [
-              "Фильтры для воды",
-              "Жаростойкая посуда",
-              "Крышки для посуды",
-              "Сменный фильтр для воды",
-              "Контейнеры и ланч-боксы"
+              "Suv filtri",
+              "Issiqlikka chidamli idishlar",
+              "Idishlar uchun qopqoqlar",
+              "O'zgartiriladigan suv filtri",
+              "Konteynerlar va tushlik qutilari"
             ]
           }
         ]
