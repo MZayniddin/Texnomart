@@ -48,7 +48,6 @@
               "Braun bug' generatorlari",
               "Bosch bug' generatorlari",
               "Tefal bug' generatorlari"
-
             ]
           },
           {
@@ -135,11 +134,7 @@
           },
           {
             "product": "Kulerlar",
-            "types": [
-              "Dispenserlar",
-              "Vital",
-              "Bona"
-            ]
+            "types": ["Dispenserlar", "Vital", "Bona"]
           }
         ]
       },
@@ -194,9 +189,7 @@
           },
           {
             "product": "Printerlar",
-            "types": [
-              "HP printerlari"
-            ]
+            "types": ["HP printerlari"]
           },
           {
             "product": "Klaviatura va sichqoncha"
@@ -309,11 +302,7 @@
         "content": [
           {
             "product": "O'rnatiladigan maishiy texnika",
-            "types": [
-              "Pishirish panellari",
-              "Tutun tortgichlar",
-              "Pechlar"
-            ]
+            "types": ["Pishirish panellari", "Tutun tortgichlar", "Pechlar"]
           }
         ]
       }
@@ -378,6 +367,718 @@
         ]
       }
     ]
-
+  },
+  {
+    "id": 5,
+    "category": "Avtomobil uchun mahsulotlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovar_dlya_avto.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Bosimli yuvish mashinalari"
+          },
+          {
+            "product": "Avtomobil signalizatsiyalari",
+            "types": [
+              "Magicar avtomobil signalizatsiyalari",
+              "StarLine avtomobil signalizatsiyalari"
+            ]
+          },
+          {
+            "product": "Videoregistratorlar",
+            "types": [
+              "Mi videoregistratorlari",
+              "Azdome videoregistratori",
+              "Oyna videoregistratorlari",
+              "GPS videoregistratorlari"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Avtomobil aksessuarlari"
+          },
+          {
+            "product": "Radar Detektorlar",
+            "types": [
+              "Tomahawk radar detektorlari",
+              "Inspector radar detektorlari",
+              "Neoline radar detektorlari",
+              "Intego radar detektorlari"
+            ]
+          },
+          {
+            "product": "Avtomobil magnitolasi"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Avtomobil akustikasi"
+          },
+          {
+            "product": "Avtomobil kuchaytirgichlari"
+          },
+          {
+            "product": "Avtomobil yuvish vositalari"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Iqlim texnikasi",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/klimaticheskaya_texnika.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Konditsionerlar",
+            "types": [
+              "Barcha konditsionerlar",
+              "Samsung konditsionerlar",
+              "Sitronic konditsionerlari",
+              "Avalon konditsionerlari",
+              "Artel konditsionerlari",
+              "Beko konditsionerlari",
+              "AUX konditsionerlari",
+              "AVA konditsionerlari",
+              "Multi-split tizimi",
+              "Pol-shift konditsionerlari",
+              "Ustunli konditsioner",
+              "Uy konditsionerlari",
+              "Deraza konditsionerlari",
+              "Mobil konditsionerlar",
+              "Inverterli konditsionerlar",
+              "Konditsionerlar 9",
+              "Konditsionerlar 12",
+              "Konditsionerlar 18",
+              "Konditsionerlar 24",
+              "Konditsionerlar 30"
+            ]
+          },
+          {
+            "product": "Ventilyatorlar",
+            "types": [
+              "Kuchli ventilyatorlar",
+              "Mini ventilyatorlar",
+              "Pol ventilyatorlari",
+              "Stol usti ventilyatorlari",
+              "Devor-polga o'rnatiladigan ventilyatorlar",
+              "Universal ventilyatorlar",
+              "Pultli ventilyatorlar",
+              "Taymerli ventilyatorlar",
+              "Ustunli ventilyatorlar",
+              "Uy ventilyatorlari"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Isitgich",
+            "types": [
+              "Mega isitgich",
+              "Emerald isitgich",
+              "ARDESTO isitgich",
+              "Electrolux isitgich",
+              "Moyli isitgich",
+              "Elektr radiatorli isitgich",
+              "Elektr isitgichlar",
+              "Infraqizil isitgich",
+              "Konvektorli isitgichlar"
+            ]
+          },
+          {
+            "product": "Suv isitgichlari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Namlagichlar",
+            "types": [
+              "Philips namlagichlari",
+              "Baseus namlagichlari",
+              "Polaris namlagichlari",
+              "VITEK namlagichlari",
+              "Tefal namlagichlari",
+              "Artel namlagichlari"
+            ]
+          },
+          {
+            "product": "Havo tozalagichlar",
+            "types": [
+              "Tefal havo tozalagichlari",
+              "Polaris havo tozalagichlari",
+              "Baseus havo tozalagichlari"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Televizorlar va telekartalar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/televizori_i_telekarti.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Barcha televizorlar",
+            "types": [
+              "",
+              "Panasonic televizorlari",
+              "Samsung televizorlari",
+              "Premier televizorlari",
+              "Shivaki televizorlari",
+              "Roison televizorlari",
+              "Philips televizorlari",
+              "Gazer televizorlari",
+              "Sony televizorlari",
+              "Artel televizorlari",
+              "LG televizorlari",
+              "4K televizorlar",
+              "8K televizorlar",
+              "LED televizorlar",
+              "QLED televizorlari",
+              "OLED televizorlar",
+              "Aqlli televizorlar",
+              "Premium televizorlar",
+              "Nano Cell televizorlari",
+              "32 dyumli televizorlar",
+              "43 dyumli televizorlar",
+              "49 dyumli televizor",
+              "55 dyumli televizorlar",
+              "65 dyumli televizorlar",
+              "75 dyumli televizorlar",
+              "Egri chiziqli televizorlar",
+              "Plazmali televizorlar",
+              "Full HD televizorlari"
+            ]
+          },
+          {
+            "product": "Televizor antennalari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Kronshteynlar"
+          },
+          {
+            "product": "Televizor tyunerlari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Televizor pultlari"
+          },
+          {
+            "product": "Televizor ramkalari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "TV va kinoga obuna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Telefon va gadjetlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/telefoni_i_gatjeti.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Gadjetlar",
+            "types": [
+              "IP-kamera",
+              "Smart soatlar",
+              "Smart tarozi",
+              "Fitnes soati",
+              "Virtual haqiqat ko'zoynaklari",
+              "Radio aloqa"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Telefon aksessuarlari",
+            "types": [
+              "Tashqi batareyalar",
+              "Smartfonlar uchun ushlagichlar",
+              "Quvvatlash qurilmalari",
+              "O'yin aksessuarlari",
+              "USB kabellar",
+              "Xotira kartalari",
+              "Selfi monopodlari",
+              "Quloqchinlar",
+              "G'ilof",
+              "Himoya oynasi"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Telefonlar",
+            "types": [
+              "Smartfonlar",
+              "Vivo smartfonlari",
+              "OPPO smartfonlari",
+              "Apple smartfonlari",
+              "Samsung smartfonlari",
+              "Honor smartfonlari",
+              "Xiaomi smartfonlari",
+              "Huawei smartfonlari",
+              "TECNO smartfonlari",
+              "Realme smartfonlari",
+              "O'yin smartfonlari",
+              "Flagmanlar",
+              "Optimal smartfonlar",
+              "Radiotelefonlar",
+              "Tugmachali telefonlar"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Planshetlar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Kompyuter texnikasi",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/komputernaya_texnika.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Kompyuter aksessuarlari",
+            "types": [
+              "Wi-Fi Router",
+              "Batareyalar",
+              "Kompyuter mebellari",
+              "Simsiz sichqoncha",
+              "Nurga qarshi ko'zoynaklar",
+              "Klaviatura va sichqoncha",
+              "Adapter",
+              "Ryukzaklar",
+              "Hub elektr uzaytirgich",
+              "Noutbuklar uchun sumkalar",
+              "Mikrofon",
+              "Sichqoncha gilamchalari",
+              "NOUTBUKLAR",
+              "Shaxsiy kompyuterlar",
+              "HP noutbuklari",
+              "Asus",
+              "Acer",
+              "DELL",
+              "Apple noutbuklari",
+              "Lenovo noutbuklari",
+              "Premium noutbuklar",
+              "Kuchli noutbuklar",
+              "O'yin uchun noutbuklar",
+              "Uy uchun noutbuklar",
+              "Ta'lim uchun noutbuklar",
+              "Arzon noutbuklar",
+              "Sensorli noutbuklar",
+              "Netbuklar",
+              "Ultrabuklar",
+              "Ish uchun noutbuklar",
+              "Grafik uchun noutbuklar",
+              "Transformer noutbuklari"
+            ]
+          },
+          {
+            "product": "Tashqi qattiq disklar"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Flesh xotira"
+          },
+          {
+            "product": "Monitorlar"
+          },
+          {
+            "product": "Printerlar va ko'p funksiyali qurilmalar"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Kompyuter kolonkalari",
+            "types": ["Edifier kolonkalari"]
+          },
+          {
+            "product": "Rele"
+          },
+          {
+            "product": "Kompyuterlar"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Monobloklar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Audiotexnika va Hi-Fi",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/audiotexnika_i_hifi.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Uy kinoteatrlari"
+          },
+          {
+            "product": "Hi-Fi kalonkalari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Musiqiy markazlar"
+          },
+          {
+            "product": "Simsiz kolonkalar",
+            "types": [
+              "Portativ kolonkalar",
+              "Simsiz kolonkalar LG",
+              "Simsiz kolonkalar JBL",
+              "Simsiz kolonkalar Awei",
+              "Simsiz kolonkalar Edifier",
+              "Simsiz kolonkalar VIDVIE",
+              "Simsiz kolonkalar Remax",
+              "Simsiz kolonkalar WEKOME",
+              "Bluetooth kolonkalari"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Kompyuter kalonkalari"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Go'zallik va salomatlik",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/krasota_i_zdorove.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Massajorlar"
+          },
+          {
+            "product": "Tarozilar"
+          },
+          {
+            "product": "Multistaylerlar",
+            "types": [
+              "Soch multistaylerlari",
+              "Bukuvchi dazmollar",
+              "Soch uchun dazmollar",
+              "2si 1da multistaylerlari",
+              "Philips multistaylerlari",
+              "Polaris multistaylerlari",
+              "Gorenje multistaylerlari",
+              "Remington multistaylerlari",
+              "Nozulli multistaylerlari"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Soch tekislovchi dazmollar",
+            "types": [
+              "Soch tekislovchilar",
+              "Braun soch tekislovchilari",
+              "Polaris soch tekislovchilari",
+              "Philips soch tekislovchilari",
+              "Sencor soch tekislovchilari",
+              "CALOR sochlarni tekislovchilari",
+              "Gorenje sochlarni tekislovchilari",
+              "Rowenta soch tekislovchilari",
+              "Panasonic soch tekislovchilari",
+              "Remington soch tekislovchilari"
+            ]
+          },
+          {
+            "product": "Soch qisqichlari",
+            "types": [
+              "Sencor soch qisqichlari",
+              "Philips soch qisqichlari",
+              "Calor soch qisqichlari",
+              "Valera soch qisqichlari",
+              "Gorenje soch qisqichlari",
+              "Polaris soch qisqichlari",
+              "Remington soch qisqichlari"
+            ]
+          },
+          {
+            "product": "Soch quritgichlari",
+            "types": [
+              "Soch quritgichlar",
+              "Remington soch quritgichlari",
+              "Soch turmaklash uchun quritgich",
+              "Panasonic soch quritgichlari",
+              "Rowenta soch quritgichlari",
+              "Gorenje soch quritgichlar",
+              "Shivaki soch quritgichlar",
+              "Philips soch quritgichlari",
+              "Sencor soch quritgichlar",
+              "Polaris soch quritgichlar",
+              "Braun soch quritgichlari",
+              "Artel soch quritgichlari",
+              "Cho`tka Soch quritgich"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Soch kesgich",
+            "types": [
+              "Soch olish mashinalari",
+              "Nozulli soch kesish mashinalari",
+              "Rowenta soch olish mashinalari",
+              "Philips soch olish mashinalari",
+              "Polaris soch o'lish mashinalari",
+              "Braun soch olish mashinalari"
+            ]
+          },
+          {
+            "product": "Elektro ustara",
+            "types": [
+              "Erkaklar uchun",
+              "Panasonic trimmerlari",
+              "Philips soqol olish mashinalari",
+              "Sencor trimmerlari",
+              "Braun trimmerlar"
+            ]
+          },
+          {
+            "product": "Epilyatorlar",
+            "types": [
+              "Remington epilyatorlar",
+              "Panasonic epilyatorlar",
+              "Philips epilyatorlar",
+              "Braun epilyatorlar"
+            ]
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Trimmerlar",
+            "types": [
+              "Soqol olish uchun trimmerlar",
+              "Simsiz trimmerlar",
+              "Burun va quloq trimmerlari",
+              "Soqol olish mashinalari",
+              "Nozulli soch olish mashinalari",
+              "Soch olish mashinalari",
+              "Remington trimmerlar",
+              "Panasonic trimmerlari",
+              "Rowenta trimmerlari",
+              "Philips ustaralari",
+              "Polaris trimmerlari",
+              "Braun trimmerlari",
+              "VITEK trimmerlari"
+            ]
+          },
+          {
+            "product": "Tish cho'tkasi",
+            "types": ["Elektr tish cho'tkasi"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Bolalar uchun mahsulotlar",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovati_dlya_detey.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Bolalar mashinalari"
+          },
+          {
+            "product": "Video enaga"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Radio enaga"
+          },
+          {
+            "product": "Bolalar aravachalari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "O'yinchoqlar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Sport va sevimli mashg'ulot",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/spor_i_uvlichenye.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Hovuzlar",
+            "types": [
+              "Ramkali hovuzlar",
+              "Puflanadigan basseynlar",
+              "Intex suv hovuzlari",
+              "Bolalar uchun shishiriladigan basseynlar"
+            ]
+          },
+          {
+            "product": "Skeytbord"
+          },
+          {
+            "product": "Velosipedlar"
+          },
+          {
+            "product": "Ellipsoidlar"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Giroskuterlar"
+          },
+          {
+            "product": "Velotrenajer"
+          },
+          {
+            "product": "Yugurish yo'lagi"
+          },
+          {
+            "product": "Turnik"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Elektrosamokatlar"
+          },
+          {
+            "product": "Fitnes to'plari"
+          },
+          {
+            "product": "Fitnes halqasi"
+          },
+          {
+            "product": "Fitens gilamchalari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Mashq niqobi"
+          },
+          {
+            "product": "Roller"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "O'yin konsollari",
+    "imgURL": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/igroviye_pristavki.svg",
+    "data": [
+      {
+        "content": [
+          {
+            "product": "Sony playstation"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Microsoft Xbox"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "O'yin disklari"
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "product": "Joystiklar"
+          }
+        ]
+      }
+    ]
   }
 ]
