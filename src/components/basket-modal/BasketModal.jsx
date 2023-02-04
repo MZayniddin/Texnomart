@@ -36,7 +36,7 @@ const BasketModal = ({ isBasketActive, setBasketActive }) => {
                 </div>
               </div>
               <div className="buy-now__content">
-                {allAddedProduct.cart.map((product) => (
+                {allAddedProduct?.cart.map((product) => (
                   <ModalProductItem
                     key={product.id}
                     id={product.id}

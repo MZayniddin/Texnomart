@@ -5,12 +5,7 @@ import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import searchCatalogData from "../../../dummy-data/search-catalog-data.json";
 //icons
-import {
-  FiMenu,
-  FiChevronDown,
-  FiUser,
-  FiHeart
-} from "react-icons/fi";
+import { FiMenu, FiChevronDown, FiUser, FiHeart } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { HiOutlineSearch } from "react-icons/hi";
 import { BsBoxSeam, BsGrid, BsCart3 } from "react-icons/bs";
@@ -26,14 +21,17 @@ const HeaderCenter = ({
   setIsCatalogActive,
   isCatalogActive,
   setBasketActive,
-  setMobSidebarActive
+  setMobSidebarActive,
 }) => {
   const elSearchInput = useRef();
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
   const [isSearchCatalogActive, setIsSearchCatalogActive] = useState(false);
-  const [activeSearchCatalog, setActiveSearchCatalog] = useState([0, "Barcha ketegoriyalar"]);
+  const [activeSearchCatalog, setActiveSearchCatalog] = useState([
+    0,
+    "Barcha ketegoriyalar",
+  ]);
   const [searchIsValid, setSearchIsValid] = useState(false);
-  const basketProducts = useSelector(state => state);
+  const basketProducts = useSelector((state) => state);
   return (
     <div
       className="header-center"
@@ -198,9 +196,16 @@ const HeaderCenter = ({
           <span className="right-action__title">Sevimlilar</span>
         </Link>
         <button className="right-action-btn" to="/">
-          <div onClick={()=>{setBasketActive(true)}} className="icon-svg">
-            <BsCart3/>
-            <span className="header-basket-count">{basketProducts.cart.length}</span>
+          <div
+            onClick={() => {
+              setBasketActive(true);
+            }}
+            className="icon-svg"
+          >
+            <BsCart3 />
+            <span className="header-basket-count">
+              {basketProducts?.cart?.length}
+            </span>
           </div>
           <span className="right-action__title">Savatcha</span>
         </button>

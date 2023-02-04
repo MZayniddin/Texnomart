@@ -9,8 +9,6 @@ import MobileSidebar from "./components/mobile-sidebar/MobileSidebar";
 function App() {
   const [isBasketActive, setBasketActive] = useState(false);
   const [isMobSideberActive, setMobSidebarActive] = useState(false);
-  console.log(isBasketActive);
-  console.log(isMobSideberActive)
   return (
     <div>
       <Header setMobSidebarActive={setMobSidebarActive} setBasketActive={setBasketActive} />

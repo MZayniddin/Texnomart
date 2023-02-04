@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 //icons
@@ -8,6 +9,7 @@ import { FiHeart } from "react-icons/fi";
 import "./ModalProductItem.scss";
 
 const ModalProductItem = ({ id, image, title, price }) => {
+  const dispatch = useDispatch();
   return (
     <div className="modal-product__item">
       <div className="product__left">
@@ -36,8 +38,13 @@ const ModalProductItem = ({ id, image, title, price }) => {
           <button className="product-favorite">
             <FiHeart className="product__icon" />
           </button>
-          <button className="product__delete remove-from-cart">
-            <HiOutlineTrash className="product__icon" />
+          <button className="product__delete remove-from-cart" onClick={()=> {
+              dispatch({
+                type: "REMOVE_PRODUCT",
+                data: id
+              })
+            }} >
+            <HiOutlineTrash className="product__icon"/>
           </button>
         </div>
       </div>
