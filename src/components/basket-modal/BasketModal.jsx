@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
 //icons
 import { CgClose } from "react-icons/cg";
 import { FiShoppingCart } from "react-icons/fi";
@@ -26,7 +27,7 @@ const BasketModal = ({ isBasketActive, setBasketActive }) => {
             </button>
             <div className="modal-content__inner">
               <div className="modal-content__title">Hozir xarid qilish</div>
-              <div className="empty-basket">
+              <div className="empty-basket" style={allAddedProduct?.cart?.length === 0 ? {display: "flex"} : {display: "none"}}>
                 <div className="empty-basket__icon">
                   <FiShoppingCart />
                 </div>
@@ -38,7 +39,7 @@ const BasketModal = ({ isBasketActive, setBasketActive }) => {
               <div className="buy-now__content">
                 {allAddedProduct?.cart.map((product) => (
                   <ModalProductItem
-                    key={product.id}
+                    key={uuidv4()}
                     id={product.id}
                     image={product.image}
                     title={product.title}
