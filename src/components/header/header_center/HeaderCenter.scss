@@ -205,6 +205,25 @@
     display: inline-block;
     position: relative;
     font-size: 24px;
+    position: relative;
+  }
+
+  .header-basket-count {
+    width: 18px;
+    height: 18px;
+    background-color: #fbc100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    color: var(--dark-c);
+    position: absolute;
+    top: -3px;
+    right: -7px;
   }
 
   .right-action__title {
@@ -257,6 +276,11 @@
 
   .right-action__title {
     display: none;
+  }
+
+  .header-basket-count {
+    top: -6px;
+    right: -10px;
   }
 }
 

@@ -1,5 +1,6 @@
 import "./HeaderCenter.scss";
 import { useRef, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import searchCatalogData from "../../../dummy-data/search-catalog-data.json";
@@ -28,11 +29,11 @@ const HeaderCenter = ({
   setMobSidebarActive
 }) => {
   const elSearchInput = useRef();
-
   const [isHeaderNavMobileActive, setIsHeaderNavMobileActive] = useState(false);
   const [isSearchCatalogActive, setIsSearchCatalogActive] = useState(false);
   const [activeSearchCatalog, setActiveSearchCatalog] = useState([0, "Barcha ketegoriyalar"]);
   const [searchIsValid, setSearchIsValid] = useState(false);
+  const basketProducts = useSelector(state => state);
   return (
     <div
       className="header-center"
@@ -199,6 +200,7 @@ const HeaderCenter = ({
         <button className="right-action-btn" to="/">
           <div onClick={()=>{setBasketActive(true)}} className="icon-svg">
             <BsCart3/>
+            <span className="header-basket-count">{basketProducts.cart.length}</span>
           </div>
           <span className="right-action__title">Savatcha</span>
         </button>
