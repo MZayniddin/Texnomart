@@ -203,9 +203,13 @@ const HeaderCenter = ({
             className="icon-svg"
           >
             <BsCart3 />
-            <span className="header-basket-count">
-              {basketProducts?.cart?.length}
-            </span>
+            {basketProducts?.cart?.length > 0 ? (
+              <span className="header-basket-count">
+                {basketProducts?.cart?.length}
+              </span>
+            ) : (
+              <></>
+            )}
           </div>
           <span className="right-action__title">Savatcha</span>
         </button>
