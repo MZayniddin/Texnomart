@@ -27,7 +27,14 @@ const BasketModal = ({ isBasketActive, setBasketActive }) => {
             </button>
             <div className="modal-content__inner">
               <div className="modal-content__title">Hozir xarid qilish</div>
-              <div className="empty-basket" style={allAddedProduct?.cart?.length === 0 ? {display: "flex"} : {display: "none"}}>
+              <div
+                className="empty-basket"
+                style={
+                  allAddedProduct?.cart?.length === 0
+                    ? { display: "flex" }
+                    : { display: "none" }
+                }
+              >
                 <div className="empty-basket__icon">
                   <FiShoppingCart />
                 </div>
@@ -35,6 +42,14 @@ const BasketModal = ({ isBasketActive, setBasketActive }) => {
                   Savatchada hozir <br />
                   hech nima ho'q
                 </div>
+                <button
+                  className="empty-basket__link"
+                  onClick={() => {
+                    setBasketActive(false);
+                  }}
+                >
+                  Xarid qilish
+                </button>
               </div>
               <div className="buy-now__content">
                 {allAddedProduct?.cart.map((product) => (
